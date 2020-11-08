@@ -1,29 +1,60 @@
 /*The File System  (fs)
-*Purpose: To interact with computer file 
-*Module Type: Inbuilt node module
-*/
+ *Purpose: To interact with computer file
+ *Module Type: Inbuilt node module
+ */
 
-/* writting File
-* Purpose: To write in a  file from local folder
-*Method : writeFile('',() =>{})
-*Method Type: Async that mean it takes too much time to do i.e before it runs its fuction the javascript runs it's further line 
-*Arugument : Require three arguement one is string type and that is file location 
-*and the second argument is the text which is going to replace the text present in that file
-* and the third callback fucnton 
-*/
+/* Directories-1
+ *Purpose:To create new directory or folder
+ *Method : mkdir
+ *Method Type:asyc
+ *Argument:It rquire two argument one is directory name which is about to created
+ * and second one is callback function
+ */
 
+ /* Directories-2
+ *Purpose:To remove existing directory or folder
+ *Method : rmdir
+ *Method Type:asyc
+ *Argument:It rquire two argument one is directory name which is about to removed
+ * and second one is callback function
+ */
+
+
+/* existsSync() method
+ *This method require one parameter and if that exists then it blocks further code
+ *that is why we have used Not(!)
+ */
+
+//import inbuilt file system(fs) node module
+const fs = require("fs");
+
+//creating directory
+
+if (!fs.existsSync("./assets")) {
+  //directories
+  fs.mkdir("./assets", (err) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log("folder created");
+  });
  
-//import inbuilt node module
-const fs  = require('fs');
+}
+else{
+    fs.rmdir('./assets',(err) =>{
+      if(err){
+          console.log(err);
+      }
+      console.log('Folder removed ')
+    })
+}
 
 
- //writting file 
-fs.writeFile('./docs/blog.text','code replace',(error,data) =>{
-    console.log('blog text replaced');
-})
 
-// if the file is not present which was about to written then it cretes that file 
-
-fs.writeFile("./docs/blog1.text", "I was not here,rather i'm created ", (error, data) => {
-  console.log("blog text replaced");
-});
+/* Note:
+ *Since this method use to create new diectory or folder so when you'd run this code
+ *at the very firs time it will create that folder but if you'd run the same code
+ * it wil show you error that the directory is already created .
+ * so better change the name of directory when you run again run same code
+ * or apply exitsSync() method to block the further code if that folder/directory already exists
+ *  */
