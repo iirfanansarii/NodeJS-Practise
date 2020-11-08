@@ -12,7 +12,7 @@
 
 /* createWriteStream
 * Purpose:To write one stream data into another stream
-*Process:When readStream creates it takes data from read stream and then it goes to writeStream 
+*Process:When readStream creates it takes data from read stream and then it goes to writeStream & create write stream
 *We haven't created the blog.txt file when writeStream file execute it create that file we have just given name
  */
 
