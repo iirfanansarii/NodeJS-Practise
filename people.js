@@ -1,7 +1,11 @@
 
-//array to store people
+//array 
 const people = ['Hello', 'Namaste', 'Swagat', 'Abhinandan' ,'Salam'];
-console.log(people); 
+const age = [20,30,40];
 
-//export is use export any file into another fiel
-module.exports = people;
+//export  multiple thing like people and age
+module.exports ={
+    
+people,age
+
+}
