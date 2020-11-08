@@ -4,7 +4,7 @@
 * */
 
 
-
+/* xyz variable store all the things coming from prople file eg:people and age */
 const xyz = require("./people");
 
 /* importing both value (people and age) from people file together */
