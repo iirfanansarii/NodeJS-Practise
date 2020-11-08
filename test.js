@@ -16,7 +16,7 @@ const int = setInterval(() =>{
 */
 
 setTimeout(() =>{
-    console.log('stop setInterval fuction in timeout 3m');
+    console.log('stop setInterval fuction in timeout 3ms');
     clearInterval(int);
 },3000);
 
