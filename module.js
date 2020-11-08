@@ -4,11 +4,17 @@
 * */
 
 
-/* Importing multiple thing from another file(people.js) */
-/* here we are importing people and age both things */
-const {people,age} = require("./people");
 
+/* Some built in node module
+ */
 
-/* since only importing people data from people file so can only display people data */
-console.log(people,age);
+ const os = require('os')
 
+ /* To get all information about your current operating system */
+console.log(os);
+
+/* To know to about platform we are running on*/
+ console.log(os.platform());
+
+/* To know about home directory on your computer */
+console.log(os.platform(),os.homedir());
