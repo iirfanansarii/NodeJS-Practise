@@ -1,23 +1,7 @@
-//Global object example
+//To get current directory of our file 
+console.log(__dirname);
+console.log(__filename);
 
 
-/* Global object :setInterval
-*Purpose:To run below function after every one second or after 5000ms 
-*/
-
-const int = setInterval(() =>{
-    console.log('running after every one second');
-}, 1000);
-
-
-
-/*Gloabal Object:clearInterval
-* Purpose:To clear the  setInterval in timeout
-*/
-
-setTimeout(() =>{
-    console.log('stop setInterval fuction in timeout 3m');
-    clearInterval(int);
-},3000);
 
 
