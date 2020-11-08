@@ -4,12 +4,10 @@
 * */
 
 
-/* xyz variable store all the things coming from prople file eg:people and age */
-const xyz = require("./people");
+/* Importing only people data from file people.js */
+const {people} = require("./people");
 
-/* importing both value (people and age) from people file together */
-console.log(xyz);
 
-/* importing both value (people and age) from people file separately */
-console.log(xyz.people,xyz.age);
+/* since only importing people data from people file so can only display people data */
+console.log(people);
 
