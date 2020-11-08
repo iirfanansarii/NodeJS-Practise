@@ -1,7 +1,7 @@
 
-//array to store people
+//array 
 const people = ['Hello', 'Namaste', 'Swagat', 'Abhinandan' ,'Salam'];
 console.log(people); 
 
-//export is use export any file into another fiel
+//export people
 module.exports = people;
