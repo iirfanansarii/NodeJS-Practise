@@ -3,10 +3,6 @@
 *Module Type: Inbuilt node module
 */
 
-//import inbuilt node module
-const fs  = require('fs');
-
-
 /* Reading File
 * Purpose: To read file from local folder
 *Method : readFile('',() =>{})
@@ -22,14 +18,18 @@ const fs  = require('fs');
 *
  */
 
+//import inbuilt file system(fs) node module
+const fs  = require('fs');
+
+//reading file
 fs.readFile('./docs/blog.txt',(error,data) =>{
 if(error){
     console.log(err);
 }
-/* display only buffer */
+/* data display only buffer */
  //console.log(data);
 
-/* To display actual data not buffer */
+/* To display actual data  buffer */
   console.log(data.toString());
 
 })
