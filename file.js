@@ -27,6 +27,5 @@ if (fs.existsSync("./docs/deleteme.txt")) {
 }
 
 /* Note:
- * This method would delete the file only when it exits that mean if you'd run thid code
- * again and agian this is not goig to show you any error
+ * This method would delete the file only when it exits that mean if you'd run this code again and agian this is not going to show you any error
  */
