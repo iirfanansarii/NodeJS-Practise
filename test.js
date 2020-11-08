@@ -2,7 +2,7 @@
 
 
 /* Global object :setInterval
-*Purpose:To run below function after every one second or after 5000ms 
+*Purpose:To run below function after every one second or after 1000ms 
 */
 
 const int = setInterval(() =>{
