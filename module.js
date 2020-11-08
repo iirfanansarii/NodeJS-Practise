@@ -13,8 +13,10 @@
  /* To get all information about your current operating system */
 console.log(os);
 
+
 /* To know to about platform we are running on*/
  console.log(os.platform());
+
 
 /* To know about home directory on your computer */
 console.log(os.platform(),os.homedir());
