@@ -23,7 +23,7 @@ const server = http.createServer((req,res) => {
    console.log('request made');
 });
 
-// listening to loacal server 
+// listening to local server 
 server.listen(3000,'localhost',() =>{
     console.log('Listening for request on  port 3000')
 })
