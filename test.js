@@ -1,14 +1,23 @@
-//Global object
-
-/* to check global object */
-console.log(global);
+//Global object example
 
 
-/* Global object :setTimeout
-*Purpose:To run below function after five second or after 5000ms 
+/* Global object :setInterval
+*Purpose:To run below function after every one second or after 5000ms 
 */
-global.setTimeout(() => {
-    console.log('in the timeout');
-    
-}, 5000);
+
+const int = setInterval(() =>{
+    console.log('running after every one second');
+}, 1000);
+
+
+
+/*Gloabal Object:clearInterval
+* Purpose:To clear the  setInterval in timeout
+*/
+
+setTimeout(() =>{
+    console.log('stop setInterval fuction in timeout 3m');
+    clearInterval(int);
+},3000);
+
 
