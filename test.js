@@ -1,12 +1,14 @@
-//variable
-const name = 'irfan';
-console.log(name);
+//Global object
 
-//function
-const greet = (name) =>{
-console.log(`greet value, ${name}`);
-}
+/* to check global object */
+console.log(global);
 
-greet('hi there');
-greet("hello");
+
+/* Global object :setTimeout
+*Purpose:To run below function after five second or after 5000ms 
+*/
+global.setTimeout(() => {
+    console.log('in the timeout');
+    
+}, 5000);
 
