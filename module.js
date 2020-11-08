@@ -4,7 +4,8 @@
 * */
 
 
-/* Importing only people data from file people.js */
+/* Importing multiple thing from another file(people.js) */
+/* here we are importing people and age both things */
 const {people,age} = require("./people");
 
 
