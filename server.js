@@ -15,14 +15,17 @@ let path = './views/';
 switch (req.url) {
   case "/":
     path += "index.html";
+    res.statusCode = 200;
     break;
 
   case "/about":
     path += "about.html";
+    res.statusCode = 200;
     break;
 
   default:
     path += "404.html";
+    res.statusCode = 404;
     break;
 }
 
@@ -34,6 +37,7 @@ switch (req.url) {
      res.end();
    } else {
      //  res.write(data);
+     
      res.end(data);
    }
  });
