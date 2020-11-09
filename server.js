@@ -23,6 +23,16 @@ switch (req.url) {
     res.statusCode = 200;
     break;
 
+  //below we are just redirecting so we don't need to append the path i.e no path require
+  // res 301 : means resource you are trying to access has been permamentaly moved
+  case "/about-me":
+    res.statusCode = 301;
+    //actual redirect using a res header
+    res.setHeader('Location','/about');
+    res.end();
+    break;
+
+    
   default:
     path += "404.html";
     res.statusCode = 404;
