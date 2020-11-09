@@ -1,8 +1,18 @@
 # NodeJS-Practise
 
-0:00 -- request object
-3:22 -- response object
-9:05 -- returning html pages
-12:59 -- basic routing
-18:41 -- status codes
-22:17 -- redirects
+
+node basics
+the global object
+modules & require
+node & the file system (creating, reading, deleting files etc)
+streams & buffers
+clients & servers
+ip addresses & domains
+creating a server
+localhost & port numbers
+request object
+response object
+returning html pages
+basic routing
+status codes
+redirects
